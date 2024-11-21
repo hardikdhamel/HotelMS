@@ -1,0 +1,108 @@
+/* Full-page styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f9; /* Light grey background */
+  }
+  
+  /* Centered login form container */
+  .login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ff4d4d;
+  }
+  
+  .login-form-wrapper {
+    background: #ffffff; /* White background for the form */
+    background-color: rgba(222, 133, 231, 0.4);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Form header styling */
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Form styling */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Input fields styling */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background: #fafafa; /* Light background for input fields */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Change border color and box-shadow on focus */
+  .form-group input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: #ff4d4d; /* Red color for error messages */
+    margin-bottom: 15px;
+  }
+  
+  /* Button styling */
+  .btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #007BFF, #0056b3); /* Gradient background */
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Button hover and active effects */
+  .btn:hover {
+    background: linear-gradient(45deg, #0056b3, #003d7a); /* Darker gradient on hover */
+  }
+  
+  .btn:active {
+    transform: scale(0.98);
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .login-form-wrapper {
+      padding: 20px;
+    }
+  }
+  
